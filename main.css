@@ -1,0 +1,58 @@
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg) ;
+    font-family: monospace;
+}
+
+ul {
+    font-family: helvetica;
+}
+li {
+    list-style: square;
+
+}
+
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: monospace;
+}
+
+:root {
+    --green: #ffffff98;
+    --white: #ffffffff;
+    --black: #1d1d1d;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 55px;
+    width: 100px;
+    border-radius: 10%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus {outline-style: none;}
